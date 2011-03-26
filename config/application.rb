@@ -42,6 +42,6 @@ module Metaconomy
     config.session_store :active_record_store
     config.secret_token = '0ce24ab70b099e61612e3d4827015c7bd06fdec5fcd74255711be247d04eae2631e3255af99c118ba804b6675b9acb81e178b8366ed471b606c9f96a9010647d'
 
-    config.middleware.use OmniAuth::Strategies::Remote, :server => "http://127.0.0.1:9292", :service => "pipeline"
+    config.middleware.use OmniAuth::Strategies::Charon, :server => "http://127.0.0.1:9292", :service => "pipeline"
   end
 end

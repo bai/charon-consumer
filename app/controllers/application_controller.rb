@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   protected
     def authorization_required!
-      redirect_to "/auth/remote" unless signed_in?
+      redirect_to "/auth/charon" unless signed_in?
     end
 
     def current_user

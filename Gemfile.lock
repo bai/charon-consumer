@@ -1,8 +1,8 @@
 GIT
-  remote: git@github.com:bai/oa-remote.git
-  revision: 335cadae5ebfdb01e270fea7dc0c0ce182be0e36
+  remote: git@github.com:bai/oa-charon.git
+  revision: a8d9e07f24c4a8a2deacf29990ad6d586974713b
   specs:
-    oa-remote (0.0.1)
+    oa-charon (0.1.0)
       omniauth
       rack
       yajl-ruby
@@ -38,11 +38,11 @@ GEM
       activesupport (= 3.0.4)
     activesupport (3.0.4)
     addressable (2.2.4)
-    arel (2.0.8)
+    arel (2.0.9)
     builder (2.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    faraday (0.5.5)
+    faraday (0.5.7)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
       rack (>= 1.1.0, < 2)
@@ -57,43 +57,48 @@ GEM
     multipart-post (1.1.0)
     net-ldap (0.1.1)
     nokogiri (1.4.4)
-    oa-basic (0.1.6)
+    oa-basic (0.2.0)
       multi_json (~> 0.0.2)
       nokogiri (~> 1.4.2)
-      oa-core (= 0.1.6)
+      oa-core (= 0.2.0)
       rest-client (~> 1.6.0)
-    oa-core (0.1.6)
+    oa-core (0.2.0)
       rack (~> 1.1)
-    oa-enterprise (0.1.6)
+    oa-enterprise (0.2.0)
       net-ldap (~> 0.1.1)
       nokogiri (~> 1.4.2)
-      oa-core (= 0.1.6)
+      oa-core (= 0.2.0)
       pyu-ruby-sasl (~> 0.0.3.1)
       rubyntlm (~> 0.1.1)
-    oa-oauth (0.1.6)
+    oa-more (0.2.0)
+      multi_json (~> 0.0.2)
+      oa-core (= 0.2.0)
+      rest-client (~> 1.6.0)
+    oa-oauth (0.2.0)
       multi_json (~> 0.0.2)
       nokogiri (~> 1.4.2)
-      oa-core (= 0.1.6)
+      oa-core (= 0.2.0)
       oauth (~> 0.4.0)
-      oauth2 (~> 0.1.0)
-    oa-openid (0.1.6)
-      oa-core (= 0.1.6)
+      oauth2 (~> 0.1.1)
+    oa-openid (0.2.0)
+      oa-core (= 0.2.0)
       rack-openid (~> 1.2.0)
       ruby-openid-apps-discovery
     oauth (0.4.4)
     oauth2 (0.1.1)
       faraday (~> 0.5.0)
       multi_json (~> 0.0.4)
-    omniauth (0.1.6)
-      oa-basic (= 0.1.6)
-      oa-core (= 0.1.6)
-      oa-enterprise (= 0.1.6)
-      oa-oauth (= 0.1.6)
-      oa-openid (= 0.1.6)
+    omniauth (0.2.0)
+      oa-basic (= 0.2.0)
+      oa-core (= 0.2.0)
+      oa-enterprise (= 0.2.0)
+      oa-more (= 0.2.0)
+      oa-oauth (= 0.2.0)
+      oa-openid (= 0.2.0)
     polyglot (0.3.1)
     pyu-ruby-sasl (0.0.3.2)
-    rack (1.2.1)
-    rack-mount (0.6.13)
+    rack (1.2.2)
+    rack-mount (0.6.14)
       rack (>= 1.0.0)
     rack-openid (1.2.0)
       rack (>= 1.1.0)
@@ -126,14 +131,14 @@ GEM
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
-    tzinfo (0.3.24)
-    yajl-ruby (0.8.0)
+    tzinfo (0.3.25)
+    yajl-ruby (0.8.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  oa-remote!
+  oa-charon!
   omniauth
   rails (= 3.0.4)
   sqlite3-ruby
