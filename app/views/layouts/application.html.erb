@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= csrf_meta_tag %>
+    <title>Metaconomy</title>
+  </head>
+  <body>
+    <% if signed_in?%>
+      <%= link_to "Logout", logout_path %>
+    <% else %>
+      <%= link_to "Login", "/auth/remote" %>
+    <% end %>
+    <br />
+    <br />
+    <br />
+    <%= yield %>
+  </body>
+</html>
