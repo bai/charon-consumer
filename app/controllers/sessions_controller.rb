@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def create
-    self.current_user = request.env['rack.auth']['uid']
+    self.current_user = request.env['omniauth.auth']['uid']
     redirect_to :controller => :pages, :action => :index
   end
 
